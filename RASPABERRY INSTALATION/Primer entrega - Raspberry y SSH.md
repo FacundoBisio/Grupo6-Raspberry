@@ -12,7 +12,7 @@ Una Raspberry Pi es un pequeño ordenador que tiene un tamaño similar a una pla
 - Tamaño muy pequeño.
 - Tienen pines de entrada/salida, por lo **que** también se pueden conectar a otros componentes electrónicos, como sensores, LEDs, etc.
 
-![[Pasted image 20230918100915.png]]
+![](https://github.com/FacundoBisio/Grupo6-Raspberry/blob/main/RASPABERRY%20INSTALATION/Img/Pasted%20image%2020230918101148.png)
 
 En las siguientes secciones, presentaremos una descripción detallada de los pasos a seguir, acompañados de una explicación precisa.
 
