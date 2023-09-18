@@ -14,6 +14,5 @@ Despues, llega el momento de elegir la opción de formateo y seleccionar la memo
 
 El próximo paso es instalar un nuevo sistema operativo. Lo vamos a hacer utilizando la misma herramienta que usamos para el formateo, es decir, Raspberry Pi Imager. En este caso, vamos a instalar el sistema operativo Raspberry Pi OS Lite (x64), que se encuentra en la sección "Raspberry Pi OS (other)". La razon de esta elección es que no vamos a necesitar la interfaz de usuario de escritorio para nuestro proyecto. Solo tenemos que seleccionar nuevamente la memoria y hacer clic en "Write". Una vez que termine el proceso, estaremos listos para empezar a trabajar directamente con Raspberry Pi a través de su interfaz. 
 
-https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.godaddy.com%2Fblog%2Fque-es-raspberry-pi%2F&psig=AOvVaw1jmYb9-vvDWJ-lvyuH6LxJ&ust=1695132414960000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJj5ub2qtIEDFQAAAAAdAAAAABAE
-
+https://github.com/FacundoBisio/Grupo6-Raspberry/blob/f471bae458ff4c501b470b0e9faa9d26d69e0395/RASPABERRY%20INSTALATION/Img/Pasted%20image%2020230918100915.png
 
