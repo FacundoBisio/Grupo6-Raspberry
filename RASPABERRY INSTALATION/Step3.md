@@ -17,4 +17,4 @@ hostname –I
 
 Este comando nos va a dar la dirección IP del ordenador Raspberry.
 
-![[Pasted image 20230918101432.png]]
+![](https://github.com/FacundoBisio/Grupo6-Raspberry/blob/main/RASPABERRY%20INSTALATION/Img/Pasted%20image%2020230918101432.png)
