@@ -17,6 +17,8 @@ El próximo paso es instalar un nuevo sistema operativo. Lo vamos a hacer utiliz
 
 https://raw.githubusercontent.com/FacundoBisio/Grupo6-Raspberry/blob/main/RASPABERRY%20INSTALATION/Img/img1.png
 
+![Esta es una imagen de ejemplo](https://github.com/FacundoBisio/Grupo6-Raspberry/blob/main/RASPABERRY%20INSTALATION/Img/img1.png)
+
 <span>(</span><span>https://github.com/FacundoBisio/Grupo6-Raspberry/blob/main/RASPABERRY%20INSTALATION/Img/img1.png</span><span>)</span>
 
 https://raw.githubusercontent.com/FacundoBisio/Grupo6-Raspberry/blob/main/RASPABERRY%20INSTALATION/Img/img1.png
