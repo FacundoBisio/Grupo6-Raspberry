@@ -1,7 +1,8 @@
 # Segunda entrega
 
 ### introduccion
-Nosotros representamos el grupo 6 del Instituto Técnico Salesiano Villada, en la asignatura de sistemas y telecomunicaciones, conformado por los estudiantes Asis Tomas, Bisio Facundo, Mendez Fabricio y Montini Francisco. Como punto de partida en nuestro proyecto relacionado con Raspberry Pi, nos proponemos llevar a cabo el formateo de nuestra unidad "Raspberry", la instalación de un nuevo sistema operativo en ella y la creación de una conexión con otras computadoras a través del protocolo SSH.
+
+Para comenzar, vamos a detallar el proceso de configuración paso a paso para lograr nuestro objetivo, que es instalar una aplicación gráfica en una Raspberry Pi y ejecutarla de forma remota desde una computadora conectada a través de SSH. Este enfoque nos permite aprovechar el poder de procesamiento de la Raspberry Pi mientras visualizamos la aplicación en la computadora cliente.
 
 ## Instalar Xorg
 
@@ -29,40 +30,62 @@ Esto debería iniciar el servidor X y cargar un entorno gráfico, si está insta
 
 Recuerda que el servidor X se configura automáticamente durante la instalación del sistema operativo y se inicia cuando inicias sesión en un entorno gráfico. Solo en casos específicos de configuración avanzada o problemas de configuración es necesario intervenir manualmente en la configuración del servidor X.
 
-## Iniciar con aplicacion grafica
+## Iniciar con una aplicacion grafica
 
-1. Instalar `gedit`, si no está instalado:
+Para comenzar, vamos a detallar el proceso de configuración paso a paso para lograr nuestro objetivo, que es instalar una aplicación gráfica en una Raspberry Pi y ejecutarla de forma remota desde una computadora conectada a través de SSH. Este enfoque nos permite aprovechar el poder de procesamiento de la Raspberry Pi mientras visualizamos la aplicación en la computadora cliente.
 
-```bash
-user@user: sudo apt update
-user@user: sudo apt install gedit
-```
+**Paso 1: Instalar `gedit`, si no está instalado:**
 
-2.  Crear en el servidor raspaberry un archivo de texto ,el cual, iremos a modificar proximamente desde la computadora conectada:
-    
-```bash
-user@raspberrypi: touch ejemplo1
-```
+En primer lugar, debemos asegurarnos de que la aplicación `gedit` esté instalada en nuestra Raspberry Pi. `gedit` es un editor de texto simple pero útil que usaremos como ejemplo en este proceso. Puede instalarlo usando el administrador de paquetes de su sistema, como `apt` en Raspbian.
 
-3. Salir de la conexion y realizar la misma pero con "-X" para poder modificar los archivos del sistema conectado:
+**Paso 2: Crear un archivo de texto en la Raspberry Pi:**
+
+Ahora, en la Raspberry Pi, vamos a crear un archivo de texto que más adelante modificaremos desde la computadora cliente. Esto se puede hacer utilizando el comando `touch` o cualquier editor de texto de su elección. Por ejemplo:
 
 ```bash
-user@user: ssh -X username@Ipaddress
+touch ejemplo1
 ```
 
-Luego poder modificar el archivo creado a traves de raspberry desde la computadora recientemente conectada:
+Este archivo servirá como un ejemplo de archivo que deseamos editar de forma remota.
+
+**Paso 3: Conectar a la Raspberry Pi a través de SSH:**
+
+En este punto, hemos creado el archivo en la Raspberry Pi y ahora necesitamos conectarnos a ella desde nuestra computadora cliente utilizando SSH. Puede hacerlo con el siguiente comando:
 
 ```bash
-user@user: gedit ejemplo1
+ssh -X usuario@direccion_ip_raspberry
 ```
 
-4. Visualizar el archivo modificado `ejemplo1` en la raspberry a traves de cat:
+Asegúrese de que la opción `-X` esté habilitada en su conexión SSH para permitir el reenvío de X11. Esto es esencial para poder visualizar aplicaciones gráficas de forma remota.
+
+**Paso 4: Modificar el archivo desde la computadora cliente:**
+
+Una vez que esté conectado a la Raspberry Pi a través de SSH con reenvío de X11 habilitado, puede utilizar su editor de texto favorito, como `gedit`, para editar el archivo que creó en el Paso 2. Por ejemplo:
 
 ```bash
-user@raspberrypi: cat ejemplo1
+gedit ejemplo1.txt
 ```
+
+Esto abrirá la aplicación `gedit` en su computadora cliente, pero la ejecución real y el procesamiento de `gedit` se realizarán en la Raspberry Pi. Puede editar el archivo y guardar los cambios como lo haría normalmente.
+
+**Paso 5: Visualizar el archivo modificado en la Raspberry Pi:**
+
+Después de realizar las modificaciones en el archivo desde la computadora cliente, es posible que desee verificar el contenido del archivo en la Raspberry Pi. Esto se puede hacer utilizando el comando `cat`. Por ejemplo:
+
+```bash
+cat ejemplo1.txt
+```
+
+Esto mostrará el contenido actualizado del archivo en la terminal de la Raspberry Pi.
+
+## Conclusión:
+
+Al seguir estos pasos, hemos logrado instalar una aplicación gráfica en una Raspberry Pi y ejecutarla de forma remota desde una computadora cliente a través de SSH con reenvío de X11 habilitado. Esto nos permite aprovechar la capacidad de procesamiento de la Raspberry Pi mientras interactuamos con la aplicación de manera gráfica desde nuestra computadora. Este enfoque es útil en situaciones en las que deseamos ejecutar aplicaciones gráficas en hardware más ligero y visualizarlas en una computadora más potente, lo que puede ser beneficioso para tareas de procesamiento de video u otras aplicaciones intensivas en gráficos.
+
 
 
 ### Objetivo:
 Instalando aplicaciones gráficas en la raspberry podamos correrlas por ssh sin que nuestro servidor realice las tareas de procesamiento del video, sino que simplemente se envíen los datos remotamente y podamos generar las ventanas y los gráficos en el host cliente.
+
+
 
