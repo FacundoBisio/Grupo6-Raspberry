@@ -27,8 +27,42 @@ user@user: startx
 
 Esto debería iniciar el servidor X y cargar un entorno gráfico, si está instalado. Si deseas usar un entorno de escritorio específico, debes instalarlo antes de iniciar el servidor X.
 
-Recuerda que en la mayoría de las distribuciones modernas de Linux, no necesitas realizar estos pasos manualmente, ya que el servidor X se configura automáticamente durante la instalación del sistema operativo y se inicia cuando inicias sesión en un entorno gráfico. Solo en casos específicos de configuración avanzada o problemas de configuración es necesario intervenir manualmente en la configuración del servidor X.
+Recuerda que el servidor X se configura automáticamente durante la instalación del sistema operativo y se inicia cuando inicias sesión en un entorno gráfico. Solo en casos específicos de configuración avanzada o problemas de configuración es necesario intervenir manualmente en la configuración del servidor X.
+
+## Iniciar con aplicacion grafica
+
+1. Instalar `gedit`, si no está instalado:
+
+```bash
+user@user: sudo apt update
+user@user: sudo apt install gedit
+```
+
+2.  Crear en el servidor raspaberry un archivo de texto ,el cual, iremos a modificar proximamente desde la computadora conectada:
+    
+```bash
+user@raspberrypi: touch ejemplo1
+```
+
+3. Salir de la conexion y realizar la misma pero con "-X" para poder modificar los archivos del sistema conectado:
+
+```bash
+user@user: ssh -X username@Ipaddress
+```
+
+Luego poder modificar el archivo creado a traves de raspberry desde la computadora recientemente conectada:
+
+```bash
+user@user: gedit ejemplo1
+```
+
+4. Visualizar el archivo modificado `ejemplo1` en la raspberry a traves de cat:
+
+```bash
+user@raspberrypi: cat ejemplo1
+```
+
 
 ### Objetivo:
-instalando aplicaciones gráficas en la raspberry podamos correrlas por ssh sin que nuestro servidor realice las tareas de procesamiento del video, sino que simplemente se envíen los datos remotamente y podamos generar las ventanas y los gráficos en el host cliente.
+Instalando aplicaciones gráficas en la raspberry podamos correrlas por ssh sin que nuestro servidor realice las tareas de procesamiento del video, sino que simplemente se envíen los datos remotamente y podamos generar las ventanas y los gráficos en el host cliente.
 
