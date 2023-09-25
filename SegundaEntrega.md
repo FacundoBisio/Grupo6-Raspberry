@@ -1,6 +1,6 @@
 # Segunda entrega
 
-#introduccion
+### introduccion
 Nosotros representamos el grupo 6 del Instituto Técnico Salesiano Villada, en la asignatura de sistemas y telecomunicaciones, conformado por los estudiantes Asis Tomas, Bisio Facundo, Mendez Fabricio y Montini Francisco. Como punto de partida en nuestro proyecto relacionado con Raspberry Pi, nos proponemos llevar a cabo el formateo de nuestra unidad "Raspberry", la instalación de un nuevo sistema operativo en ella y la creación de una conexión con otras computadoras a través del protocolo SSH.
 
 ## Instalar Xorg
@@ -29,6 +29,6 @@ Esto debería iniciar el servidor X y cargar un entorno gráfico, si está insta
 
 Recuerda que en la mayoría de las distribuciones modernas de Linux, no necesitas realizar estos pasos manualmente, ya que el servidor X se configura automáticamente durante la instalación del sistema operativo y se inicia cuando inicias sesión en un entorno gráfico. Solo en casos específicos de configuración avanzada o problemas de configuración es necesario intervenir manualmente en la configuración del servidor X.
 
-### Conclusion:
+### Objetivo:
 instalando aplicaciones gráficas en la raspberry podamos correrlas por ssh sin que nuestro servidor realice las tareas de procesamiento del video, sino que simplemente se envíen los datos remotamente y podamos generar las ventanas y los gráficos en el host cliente.
 
