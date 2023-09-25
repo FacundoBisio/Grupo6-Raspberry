@@ -32,6 +32,8 @@ Recuerda que el servidor X se configura automáticamente durante la instalación
 
 ## Iniciar con una aplicacion grafica
 
+### Paso por paso
+
 Para comenzar, vamos a detallar el proceso de configuración paso a paso para lograr nuestro objetivo, que es instalar una aplicación gráfica en una Raspberry Pi y ejecutarla de forma remota desde una computadora conectada a través de SSH. Este enfoque nos permite aprovechar el poder de procesamiento de la Raspberry Pi mientras visualizamos la aplicación en la computadora cliente.
 
 **Paso 1: Instalar `gedit`, si no está instalado:**
