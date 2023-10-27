@@ -48,7 +48,7 @@ sudo service vsftpd restart
 ## Conexión al servicio
 Una vez que hemos instalado nuestro servidor FTP, vamos a ver si funciona, para ello, descargamos [Filezilla](https://filezilla-project.org/) que es un cliente FTP. Al abrirlo nos aparecerá una ventana tal como esta:
 
-![imagen1](imagen1.png)
+![imagen1](/Img/imagen1.jpeg)
 
 Tendremos que conectarnos al servidor FTP ingresando la IP de la Raspberry, (que en nuestro caso es 192.169.6.2). También ingresaremos el usuario y la contraseña de nuestra Raspberry.
 
