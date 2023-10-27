@@ -15,17 +15,16 @@ Despues, llega el momento de elegir la opción de formateo y seleccionar la memo
 
 El próximo paso es instalar un nuevo sistema operativo. Lo vamos a hacer utilizando la misma herramienta que usamos para el formateo, es decir, Raspberry Pi Imager. En este caso, vamos a instalar el sistema operativo Raspberry Pi OS Lite (x64), que se encuentra en la sección "Raspberry Pi OS (other)". La razon de esta elección es que no vamos a necesitar la interfaz de usuario de escritorio para nuestro proyecto. Solo tenemos que seleccionar nuevamente la memoria y hacer clic en "Write". Una vez que termine el proceso, estaremos listos para empezar a trabajar directamente con Raspberry Pi a través de su interfaz. 
 
-![img1.png](/Img/img1.png)
+
 
 ## STEP 2: Hardware y Usuarios
 
 En el siguiente paso, una vez retiremos la tarjeta de memoria MicroSD del ordenador y la insertemos nuevamente en nuestra Raspberry Pi, ya vamos a estar listos para comenzar con nuestras actividades. Conectamos un monitor a través de un cable HDMI, un teclado mediante un puerto USB y establecemos una conexión a través de un cable LAN, además de conectar el conector micro-USB para la alimentación. Con estos elementos en su lugar, estaremos preparados para iniciar nuestras labores.
 
-![Pasted%20image%2020230918101213.png](/Img/Pasted%20image%2020230918101213.png)
 
 Para dar inicio, necesitamos establecer un nuevo usuario. Le solicitaremos que elija un nombre de usuario y una contraseña, pero es esencial que los anote y los recuerde cuidadosamente. Una vez que haya finalizado el proceso de inicio de sesión, se le presentará una terminal que guarda semejanza con la que se encuentra en el sistema operativo Linux. Esta terminal opera utilizando el lenguaje Bash. A continuación, proporcionaremos una guía que contiene los comandos que debe introducir, junto con una breve descripción de la función de cada uno, para poner en marcha el servicio de SSH.
 
-![Pasted%20image%2020230918101256.png](/Img/Pasted%20image%2020230918101256.png)
+
 
 ## STEP 3: Creación de la SSH Key
 
@@ -46,7 +45,7 @@ hostname –I
 
 Este comando nos va a dar la dirección IP del ordenador Raspberry.
 
-![Pasted%20image%2020230918101432.png](/Img/Pasted%20image%2020230918101432.png)
+
 
 
 
